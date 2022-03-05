@@ -268,12 +268,7 @@ defmodule Lanyard.Gateway.Client do
         "$referring_domain" => ""
       },
       "presence" => %{
-        "since" => nil,
-        "game" => %{
-          "name" => Application.get_env(:lanyard, :bot_presence),
-          "type" => Application.get_env(:lanyard, :bot_presence_type)
-        },
-        "status" => "online"
+        "status" => "invisible"
       },
       "compress" => false,
       "large_threshold" => 250,
